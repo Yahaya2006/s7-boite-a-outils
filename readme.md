@@ -1,7 +1,6 @@
 # Boîte à outils JS — 10 fonctions utilitaires
 
-Bibliothèque de fonctions réutilisables + mini-site de documentation.
-Projet Semaine 7 (Avancé) — Akieni Academy.
+Bibliothèque de fonctions réutilisables
 
 ## Fichiers
 
@@ -54,3 +53,4 @@ git remote add origin https://github.com/VOTRE-NOM-UTILISATEUR/s7-boite-a-outils
 git push -u origin main
 ```
 Puis **Settings → Pages** → branche `main` → dossier `/ (root)`.
+------
