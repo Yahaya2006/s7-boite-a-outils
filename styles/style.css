@@ -1,0 +1,147 @@
+:root {
+  --vert: #10b981;
+  --rouge: #ef4444;
+  --bleu: #3b82f6;
+  --orange: #f59e0b;
+  --texte: #b8509f;
+  --texte-clair: #6b7280;
+  --fond: #f9fafb;
+  --carte: #ffffff;
+  --code-fond: #e6a0cf;
+  --code-texte: #e2e8f0;
+  --rayon: 12px;
+  --espace: 1rem;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--texte);
+  background: var(--fond);
+  padding: var(--espace);
+}
+
+.entete {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.entete h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.sous-titre {
+  color: var(--texte-clair);
+  font-size: 0.95rem;
+}
+
+
+.mise-en-page-doc {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .mise-en-page-doc {
+    grid-template-columns: 220px 1fr;
+    align-items: start;
+  }
+}
+
+
+.sommaire {
+  background: var(--carte);
+  border-radius: var(--rayon);
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+
+  
+  position: sticky;
+  top: 1rem;
+}
+
+.sommaire h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.sommaire h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--texte-clair);
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.sommaire ul {
+  list-style: none;
+}
+
+.sommaire li {
+  margin-bottom: 0.3rem;
+}
+
+.sommaire a {
+  color: var(--texte);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sommaire a:hover {
+  color: var(--bleu);
+}
+
+
+.fonction {
+  background: var(--carte);
+  border-radius: var(--rayon);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+  scroll-margin-top: 1rem; 
+}
+
+.fonction-entete {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.fonction h2 {
+  font-size: 1.15rem;
+  font-family: 'Courier New', monospace;
+}
+
+
+pre {
+  background-color: var(--code-fond);
+  color: var(--code-texte);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+code {
+  font-family: 'Courier New', Consolas, monospace;
+}
+
+.exemples pre {
+  margin-bottom: 0.5rem;
+}
+
+.pied {
+  text-align: center;
+  color: var(--texte-clair);
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+}
